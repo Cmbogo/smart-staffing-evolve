@@ -1,5 +1,6 @@
 
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -21,7 +22,7 @@ const Header = () => {
         
         {/* Main navigation */}
         <nav className="flex items-center justify-between py-4">
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <div className="bg-primary text-primary-foreground p-2 rounded-lg">
               <span className="font-bold text-xl">SS</span>
             </div>
@@ -29,13 +30,13 @@ const Header = () => {
               <h1 className="font-bold text-lg text-primary">Smart Staffing</h1>
               <p className="text-xs text-muted-foreground">Management Consultancy</p>
             </div>
-          </div>
+          </Link>
           
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-foreground hover:text-primary transition-colors">Home</a>
-            <a href="#about" className="text-foreground hover:text-primary transition-colors">About</a>
-            <a href="#services" className="text-foreground hover:text-primary transition-colors">Services</a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a>
+            <Link to="/" className="text-foreground hover:text-primary transition-colors">Home</Link>
+            <Link to="/about" className="text-foreground hover:text-primary transition-colors">About</Link>
+            <Link to="/services" className="text-foreground hover:text-primary transition-colors">Services</Link>
+            <Link to="/contact" className="text-foreground hover:text-primary transition-colors">Contact</Link>
           </div>
           
           <button className="md:hidden">

@@ -1,18 +1,18 @@
 
 import Header from '@/components/Header';
-import Hero from '@/components/Hero';
-import WhyChooseUs from '@/components/WhyChooseUs';
 import Footer from '@/components/Footer';
+import Contact from '@/components/Contact';
 
-const Index = () => {
+const ContactPage = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <Hero />
-      <WhyChooseUs />
+      <section className="py-20">
+        <Contact />
+      </section>
       <Footer />
     </div>
   );
 };
 
-export default Index;
+export default ContactPage;
