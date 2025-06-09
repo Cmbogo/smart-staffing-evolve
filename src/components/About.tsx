@@ -1,5 +1,4 @@
-
-import { Eye, Target, Heart, Shield, Users, Leaf } from 'lucide-react';
+import { Eye, Target, Heart, Shield, Users, Leaf, Award } from 'lucide-react';
 
 const About = () => {
   return (
