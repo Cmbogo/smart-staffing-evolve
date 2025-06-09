@@ -7,7 +7,7 @@ const Header = () => {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4">
         {/* Top contact bar */}
-        <div className="hidden md:flex justify-end py-2 text-sm text-muted-foreground border-b">
+        <div className="hidden md:flex justify-center py-2 text-sm text-muted-foreground border-b">
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
               <Phone className="h-4 w-4" />
@@ -32,11 +32,13 @@ const Header = () => {
             </div>
           </Link>
           
-          <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-foreground hover:text-primary transition-colors">Home</Link>
-            <Link to="/about" className="text-foreground hover:text-primary transition-colors">About</Link>
-            <Link to="/services" className="text-foreground hover:text-primary transition-colors">Services</Link>
-            <Link to="/contact" className="text-foreground hover:text-primary transition-colors">Contact</Link>
+          <div className="hidden md:flex items-center justify-center flex-1">
+            <div className="flex items-center space-x-8">
+              <Link to="/" className="text-foreground hover:text-primary transition-colors font-medium">Home</Link>
+              <Link to="/about" className="text-foreground hover:text-primary transition-colors font-medium">About</Link>
+              <Link to="/services" className="text-foreground hover:text-primary transition-colors font-medium">Services</Link>
+              <Link to="/contact" className="text-foreground hover:text-primary transition-colors font-medium">Contact</Link>
+            </div>
           </div>
           
           <button className="md:hidden">
@@ -46,6 +48,9 @@ const Header = () => {
               <div className="w-6 h-0.5 bg-foreground"></div>
             </div>
           </button>
+          
+          {/* Spacer to balance the logo on the left */}
+          <div className="hidden md:block w-[200px]"></div>
         </nav>
       </div>
     </header>

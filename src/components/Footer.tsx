@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground py-8">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <div className="bg-primary-foreground text-primary p-2 rounded-lg">
@@ -16,7 +16,7 @@ const Footer = () => {
                 <p className="text-sm opacity-90">Management Consultancy</p>
               </div>
             </div>
-            <p className="text-sm opacity-90">
+            <p className="text-sm opacity-90 mb-4">
               Empowering organizations through strategic human capital management.
             </p>
           </div>
@@ -39,11 +39,30 @@ const Footer = () => {
               <p>Riverside Drive, Nairobi</p>
             </div>
           </div>
+          
+          <div>
+            <h4 className="font-semibold mb-4">Our Network</h4>
+            <div className="space-y-2 text-sm opacity-90">
+              <p>Part of the CreekOxley brand</p>
+              <p>Business Management Consultants</p>
+              <a 
+                href="https://creekoxley.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-secondary hover:text-primary-foreground transition-colors underline"
+              >
+                creekoxley.com
+              </a>
+            </div>
+          </div>
         </div>
         
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-sm opacity-90">
-            © 2024 Smart Staffing and Management Consultancy Ltd. All rights reserved.
+            © 2025 Smart Staffing and Management Consultancy Ltd. All rights reserved.
+          </p>
+          <p className="text-xs opacity-75 mt-2">
+            A CreekOxley Business Management Consultancy
           </p>
         </div>
       </div>

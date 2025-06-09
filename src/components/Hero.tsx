@@ -1,5 +1,6 @@
 
 import { ArrowRight, Users, Target, Award } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -19,13 +20,19 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors flex items-center justify-center space-x-2">
+              <Link 
+                to="/contact"
+                className="bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors flex items-center justify-center space-x-2"
+              >
                 <span>Get Started Today</span>
                 <ArrowRight className="h-5 w-5" />
-              </button>
-              <button className="border border-primary text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors">
+              </Link>
+              <Link 
+                to="/contact"
+                className="border border-primary text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors text-center"
+              >
                 Learn More
-              </button>
+              </Link>
             </div>
           </div>
           

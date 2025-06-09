@@ -1,5 +1,6 @@
 
 import { Phone, Mail, MapPin, Clock, ArrowRight } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const Contact = () => {
   return (
@@ -102,10 +103,10 @@ const Contact = () => {
                 ></textarea>
               </div>
               
-              <button className="w-full bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors flex items-center justify-center space-x-2">
+              <Button className="w-full flex items-center justify-center space-x-2">
                 <span>Send Message</span>
                 <ArrowRight className="h-5 w-5" />
-              </button>
+              </Button>
             </form>
           </div>
         </div>
