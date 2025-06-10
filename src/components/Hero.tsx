@@ -9,9 +9,8 @@ const Hero = () => {
       <div className="py-24 bg-gradient-to-r from-primary/5 via-secondary/5 to-primary/5">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto space-y-8">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-              Empowering Organizations Through
-              <span className="text-primary block mt-2">Strategic Human Capital Management</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
+              Empowering Organizations Through Strategic Human Capital Management
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">

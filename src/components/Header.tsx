@@ -24,9 +24,9 @@ const Header = () => {
         <nav className="flex items-center justify-between py-4">
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/e67ca8da-a734-4de7-b67f-20e6e5a3dce2" 
+              src="/lovable-uploads/e46b7442-7c6f-451f-bddf-abb1f2c5e88f.png" 
               alt="Smart Staffing Logo" 
-              className="h-12 w-auto"
+              className="h-12 w-auto object-contain"
             />
             <div>
               <h1 className="font-bold text-lg text-primary">Smart Staffing</h1>
