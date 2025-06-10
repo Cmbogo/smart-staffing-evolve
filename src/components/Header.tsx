@@ -24,14 +24,10 @@ const Header = () => {
         <nav className="flex items-center justify-between py-4">
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/e46b7442-7c6f-451f-bddf-abb1f2c5e88f.png" 
+              src="/lovable-uploads/14e992c7-b62d-4a7c-8474-48692bdaad6d.png" 
               alt="Smart Staffing Logo" 
-              className="h-12 w-auto object-contain"
+              className="h-16 w-auto object-contain"
             />
-            <div>
-              <h1 className="font-bold text-lg text-primary">Smart Staffing</h1>
-              <p className="text-xs text-muted-foreground">Management Consultancy</p>
-            </div>
           </Link>
           
           <div className="hidden md:flex items-center justify-center flex-1">

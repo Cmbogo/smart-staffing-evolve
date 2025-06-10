@@ -7,14 +7,12 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="bg-primary-foreground text-primary p-2 rounded-lg">
-                <span className="font-bold text-xl">SS</span>
-              </div>
-              <div>
-                <h3 className="font-bold text-lg">Smart Staffing</h3>
-                <p className="text-sm opacity-90">Management Consultancy</p>
-              </div>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src="/lovable-uploads/14e992c7-b62d-4a7c-8474-48692bdaad6d.png" 
+                alt="Smart Staffing Logo" 
+                className="h-12 w-auto object-contain brightness-0 invert"
+              />
             </div>
             <p className="text-sm opacity-90 mb-4">
               Empowering organizations through strategic human capital management.
