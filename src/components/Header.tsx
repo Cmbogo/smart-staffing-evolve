@@ -22,10 +22,12 @@ const Header = () => {
         
         {/* Main navigation */}
         <nav className="flex items-center justify-between py-4">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="bg-primary text-primary-foreground p-2 rounded-lg">
-              <span className="font-bold text-xl">SS</span>
-            </div>
+          <Link to="/" className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/e67ca8da-a734-4de7-b67f-20e6e5a3dce2" 
+              alt="Smart Staffing Logo" 
+              className="h-12 w-auto"
+            />
             <div>
               <h1 className="font-bold text-lg text-primary">Smart Staffing</h1>
               <p className="text-xs text-muted-foreground">Management Consultancy</p>
@@ -33,7 +35,7 @@ const Header = () => {
           </Link>
           
           <div className="hidden md:flex items-center justify-center flex-1">
-            <div className="flex items-center space-x-8">
+            <div className="flex items-center space-x-16">
               <Link to="/" className="text-foreground hover:text-primary transition-colors font-medium">Home</Link>
               <Link to="/about" className="text-foreground hover:text-primary transition-colors font-medium">About</Link>
               <Link to="/services" className="text-foreground hover:text-primary transition-colors font-medium">Services</Link>

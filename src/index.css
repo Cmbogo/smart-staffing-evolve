@@ -8,25 +8,25 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 126 95% 7%;
+    --foreground: 0 0% 15%; /* Dark charcoal for better readability */
 
     --card: 0 0% 100%;
-    --card-foreground: 126 95% 7%;
+    --card-foreground: 0 0% 20%; /* Professional dark gray */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 126 95% 7%;
+    --popover-foreground: 0 0% 15%;
 
-    --primary: 126 95% 7%;
+    --primary: 126 95% 7%; /* Dark Green #032806 */
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 97 58% 81%;
-    --secondary-foreground: 126 95% 7%;
+    --secondary: 97 58% 81%; /* Soft Light Green #C3E6B6 */
+    --secondary-foreground: 0 0% 15%; /* Dark text on light background */
 
     --muted: 97 58% 85%;
-    --muted-foreground: 126 40% 35%;
+    --muted-foreground: 0 0% 45%; /* Professional gray for muted text */
 
     --accent: 97 58% 85%;
-    --accent-foreground: 126 95% 7%;
+    --accent-foreground: 0 0% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -38,19 +38,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 126 40% 35%;
-
+    --sidebar-foreground: 0 0% 45%;
     --sidebar-primary: 126 95% 7%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 97 58% 85%;
-
-    --sidebar-accent-foreground: 126 95% 7%;
-
+    --sidebar-accent-foreground: 0 0% 15%;
     --sidebar-border: 97 58% 88%;
-
     --sidebar-ring: 126 95% 7%;
   }
 
