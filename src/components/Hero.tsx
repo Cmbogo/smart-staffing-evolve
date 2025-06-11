@@ -27,7 +27,7 @@ const Hero = () => {
                 <ArrowRight className="h-5 w-5" />
               </Link>
               <Link 
-                to="/contact"
+                to="/services"
                 className="border-2 border-primary text-primary px-10 py-4 rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors text-center text-lg font-semibold"
               >
                 Learn More

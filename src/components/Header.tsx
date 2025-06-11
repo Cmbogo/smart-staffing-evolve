@@ -1,4 +1,3 @@
-
 import { Phone, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -21,7 +20,7 @@ const Header = () => {
         </div>
         
         {/* Main navigation */}
-        <nav className="flex items-center justify-between py-4">
+        <nav className="flex items-center py-4">
           <Link to="/" className="flex items-center space-x-3">
             <img 
               src="/lovable-uploads/14e992c7-b62d-4a7c-8474-48692bdaad6d.png" 
@@ -30,8 +29,8 @@ const Header = () => {
             />
           </Link>
           
-          <div className="hidden md:flex items-center justify-center flex-1">
-            <div className="flex items-center space-x-16">
+          <div className="flex-1 flex justify-center">
+            <div className="hidden md:flex items-center space-x-16">
               <Link to="/" className="text-foreground hover:text-primary transition-colors font-medium">Home</Link>
               <Link to="/about" className="text-foreground hover:text-primary transition-colors font-medium">About</Link>
               <Link to="/services" className="text-foreground hover:text-primary transition-colors font-medium">Services</Link>
@@ -47,8 +46,8 @@ const Header = () => {
             </div>
           </button>
           
-          {/* Spacer to balance the logo on the left */}
-          <div className="hidden md:block w-[200px]"></div>
+          {/* Right spacer for mobile balance */}
+          <div className="w-16 md:w-0"></div>
         </nav>
       </div>
     </header>
