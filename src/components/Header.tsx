@@ -21,17 +21,17 @@ const Header = () => {
         </div>
         
         {/* Main navigation */}
-        <nav className="flex items-center justify-center py-4">
-          <div className="flex items-center space-x-12">
-            <Link to="/" className="flex items-center space-x-3">
-              <img 
-                src="/lovable-uploads/14e992c7-b62d-4a7c-8474-48692bdaad6d.png" 
-                alt="Smart Staffing Logo" 
-                className="h-16 w-auto object-contain"
-              />
-            </Link>
-            
-            <div className="hidden md:flex items-center space-x-16">
+        <nav className="flex items-center justify-between py-4">
+          <Link to="/" className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/14e992c7-b62d-4a7c-8474-48692bdaad6d.png" 
+              alt="Smart Staffing Logo" 
+              className="h-16 w-auto object-contain"
+            />
+          </Link>
+          
+          <div className="hidden md:flex items-center justify-center flex-1">
+            <div className="flex items-center space-x-16">
               <Link to="/" className="text-foreground hover:text-primary transition-colors font-medium">Home</Link>
               <Link to="/about" className="text-foreground hover:text-primary transition-colors font-medium">About</Link>
               <Link to="/services" className="text-foreground hover:text-primary transition-colors font-medium">Services</Link>
@@ -46,6 +46,9 @@ const Header = () => {
               <div className="w-6 h-0.5 bg-foreground"></div>
             </div>
           </button>
+          
+          {/* Spacer to balance the logo on the left */}
+          <div className="hidden md:block w-[200px]"></div>
         </nav>
       </div>
     </header>
