@@ -5,13 +5,13 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground py-8">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center space-x-3 mb-4">
               <img 
                 src="/lovable-uploads/14e992c7-b62d-4a7c-8474-48692bdaad6d.png" 
                 alt="Smart Staffing Logo" 
-                className="h-12 w-auto object-contain brightness-0 invert"
+                className="h-12 w-auto object-contain"
               />
             </div>
             <p className="text-sm opacity-90 mb-4">
@@ -32,25 +32,9 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Contact Info</h4>
             <div className="space-y-2 text-sm opacity-90">
-              <p>0705766772 / 0716857000</p>
+              <p>0716857000</p>
               <p>Info@smartstaffingke.com</p>
               <p>Riverside Drive, Nairobi</p>
-            </div>
-          </div>
-          
-          <div>
-            <h4 className="font-semibold mb-4">Our Network</h4>
-            <div className="space-y-2 text-sm opacity-90">
-              <p>Part of the CreekOxley brand</p>
-              <p>Business Management Consultants</p>
-              <a 
-                href="https://creekoxley.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-secondary hover:text-primary-foreground transition-colors underline"
-              >
-                creekoxley.com
-              </a>
             </div>
           </div>
         </div>
@@ -58,9 +42,6 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-sm opacity-90">
             © 2025 Smart Staffing and Management Consultancy Ltd. All rights reserved.
-          </p>
-          <p className="text-xs opacity-75 mt-2">
-            A CreekOxley Business Management Consultancy
           </p>
         </div>
       </div>
