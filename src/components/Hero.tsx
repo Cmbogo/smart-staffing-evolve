@@ -1,68 +1,49 @@
 
-import { ArrowRight, Users, Target, Award } from 'lucide-react';
+import { ArrowRight, MessageSquare, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
     <section id="home" className="bg-gradient-to-br from-primary/5 to-secondary/10">
-      {/* Hero Banner - Full Width */}
       <div className="py-24 bg-gradient-to-r from-primary/5 via-secondary/5 to-primary/5">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto space-y-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
-              Empowering Organizations Through Strategic Human Capital Management
+              Turning People, Culture, and Strategy into Business Performance
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Transform your business potential with innovative HR solutions. We align human capital strategies 
-              with organizational goals, fostering growth and long-term success through tailored, practical solutions.
+              We help organizations align leadership, people, and systems to improve productivity, 
+              strengthen culture, and deliver sustainable results.
+            </p>
+
+            <p className="text-base text-muted-foreground/80 italic max-w-2xl mx-auto">
+              Because when people, culture, and strategy are not aligned, performance suffers—no matter 
+              how strong the business plan is.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-6">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
               <Link 
                 to="/contact"
-                className="bg-primary text-primary-foreground px-10 py-4 rounded-lg hover:bg-primary/90 transition-colors flex items-center justify-center space-x-2 text-lg font-semibold"
+                className="bg-primary text-primary-foreground px-8 py-4 rounded-lg hover:bg-primary/90 transition-colors flex items-center justify-center space-x-2 text-lg font-semibold"
               >
-                <span>Get Started Today</span>
+                <span>Book a Consultation</span>
                 <ArrowRight className="h-5 w-5" />
               </Link>
               <Link 
-                to="/services"
-                className="border-2 border-primary text-primary px-10 py-4 rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors text-center text-lg font-semibold"
+                to="/contact"
+                className="border-2 border-primary text-primary px-8 py-4 rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center space-x-2 text-lg font-semibold"
               >
-                Learn More
+                <MessageSquare className="h-5 w-5" />
+                <span>Start a Conversation</span>
               </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Features Section - Below Banner */}
-      <div className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="bg-card p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
-              <Users className="h-16 w-16 text-primary mb-6 mx-auto" />
-              <h3 className="font-bold text-xl text-card-foreground mb-4">Expert Team</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Professional HR consultants with deep industry expertise and proven track records
-              </p>
-            </div>
-            
-            <div className="bg-card p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
-              <Target className="h-16 w-16 text-primary mb-6 mx-auto" />
-              <h3 className="font-bold text-xl text-card-foreground mb-4">Strategic Focus</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Aligning HR strategies with business objectives for maximum organizational impact
-              </p>
-            </div>
-            
-            <div className="bg-card p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
-              <Award className="h-16 w-16 text-primary mb-6 mx-auto" />
-              <h3 className="font-bold text-xl text-card-foreground mb-4">Proven Results</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Delivering sustainable impact and measurable growth for our client organizations
-              </p>
+              <Link 
+                to="/contact"
+                className="border-2 border-secondary text-secondary-foreground px-8 py-4 rounded-lg hover:bg-secondary transition-colors flex items-center justify-center space-x-2 text-lg font-semibold"
+              >
+                <FileText className="h-5 w-5" />
+                <span>Request a Proposal</span>
+              </Link>
             </div>
           </div>
         </div>
