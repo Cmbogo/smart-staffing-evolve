@@ -1,57 +1,42 @@
 
-import { Building, Users, DollarSign, BarChart3, Award, TrendingUp, Shield, UserSearch, FileText, RefreshCw } from 'lucide-react';
+import { RefreshCw, Users, Target, HeartHandshake, FileText, Shield, UserSearch } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
-      icon: Building,
-      title: "Organizational Structure Review",
-      description: "Aligning roles and processes to strategic goals."
+      icon: RefreshCw,
+      title: "Organizational Transformation",
+      description: "Aligning structures, roles, and people to business goals during periods of change."
     },
     {
       icon: Users,
-      title: "Job Analysis & Evaluation",
-      description: "Creating role-specific job descriptions for fair compensation."
+      title: "Culture & Leadership Alignment",
+      description: "Defining and embedding the leadership behaviours and culture that drive performance."
     },
     {
-      icon: DollarSign,
-      title: "Salary Benchmarking",
-      description: "Developing competitive pay structures to attract top talent."
+      icon: Target,
+      title: "Strategy Execution & Performance Alignment",
+      description: "Translating strategy into clear roles, KPIs, and accountability frameworks."
     },
     {
-      icon: BarChart3,
-      title: "Workload Analysis",
-      description: "Ensuring equitable task distribution for productivity."
+      icon: HeartHandshake,
+      title: "Employee Engagement & Productivity",
+      description: "Identifying root causes of disengagement and implementing practical performance solutions."
     },
     {
-      icon: Award,
-      title: "Skills & Competency Assessment",
-      description: "Supporting succession planning and development."
-    },
-    {
-      icon: TrendingUp,
-      title: "Performance Management",
-      description: "Fostering engagement and driving results."
+      icon: FileText,
+      title: "HR Systems, Policies & Contracts",
+      description: "Designing structured HR frameworks that promote consistency and scalability."
     },
     {
       icon: Shield,
       title: "HR Audits & Compliance",
-      description: "Identifying risks and improving processes."
+      description: "Assessing HR practices to identify gaps, ensure compliance, and mitigate risk."
     },
     {
       icon: UserSearch,
-      title: "Talent Acquisition",
-      description: "Attracting top talent with strategic hiring solutions."
-    },
-    {
-      icon: FileText,
-      title: "HR Policies & Contracts",
-      description: "Building fair, transparent, and inclusive systems."
-    },
-    {
-      icon: RefreshCw,
-      title: "Change Management",
-      description: "Guiding teams through transformations with people-centered strategies."
+      title: "Strategic Talent Acquisition & Workforce Planning",
+      description: "Attracting and aligning talent to business strategy and long-term growth."
     }
   ];
 
@@ -61,8 +46,7 @@ const Services = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Services</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            We transform HR management with comprehensive solutions designed to optimize your 
-            workforce and drive sustainable growth.
+            We partner with organizations to solve critical people and performance challenges.
           </p>
         </div>
         
