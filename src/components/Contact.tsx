@@ -1,113 +1,188 @@
-
-import { Phone, Mail, MapPin, Clock, ArrowRight } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { useState } from 'react';
 
 const Contact = () => {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitted(true);
+  };
+
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Get Started Today</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Ready to unlock your organization's potential? Contact us now for tailored HR solutions 
-            designed for your success.
-          </p>
-        </div>
-        
-        <div className="grid md:grid-cols-2 gap-12">
-          <div className="space-y-8">
-            <div className="flex items-start space-x-4">
-              <Phone className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+    <section id="contact" className="bg-white section-padding" aria-label="Contact section">
+      <div className="site-container">
+
+        <div className="grid lg:grid-cols-2 gap-20">
+
+          {/* Left: contact info */}
+          <div>
+            <span className="section-label">Get In Touch</span>
+            <h2 className="font-display text-[#0D0D0D] mb-8">Let's talk.</h2>
+
+            <p className="font-sans text-lg text-[#6B7063] leading-relaxed mb-12">
+              Whether you have a specific HR challenge or are thinking through where to begin,
+              we are straightforward to reach. No long intake forms.
+            </p>
+
+            <div className="flex flex-col gap-10">
               <div>
-                <h3 className="font-semibold text-foreground mb-2">Phone Number</h3>
-                <p className="text-muted-foreground">0716857000</p>
+                <p className="font-sans text-xs font-medium uppercase tracking-widest text-[#C9B99A] mb-2">
+                  Phone
+                </p>
+                <p className="font-sans text-[#0D0D0D] text-lg">0716 857 000</p>
               </div>
-            </div>
-            
-            <div className="flex items-start space-x-4">
-              <Mail className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+
               <div>
-                <h3 className="font-semibold text-foreground mb-2">Email Addresses</h3>
-                <p className="text-muted-foreground">EMwangi@smartstaffingke.com</p>
-                <p className="text-muted-foreground">Info@smartstaffingke.com</p>
+                <p className="font-sans text-xs font-medium uppercase tracking-widest text-[#C9B99A] mb-2">
+                  Email
+                </p>
+                <a
+                  href="mailto:Info@smartstaffingke.com"
+                  className="font-sans text-[#0D0D0D] text-lg hover:text-[#1A3A2A] transition-colors"
+                >
+                  Info@smartstaffingke.com
+                </a>
+                <br />
+                <a
+                  href="mailto:EMwangi@smartstaffingke.com"
+                  className="font-sans text-[#6B7063] hover:text-[#1A3A2A] transition-colors"
+                >
+                  EMwangi@smartstaffingke.com
+                </a>
               </div>
-            </div>
-            
-            <div className="flex items-start space-x-4">
-              <MapPin className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+
               <div>
-                <h3 className="font-semibold text-foreground mb-2">Office Location</h3>
-                <p className="text-muted-foreground">
-                  Riverside close - opposite oyster paradise,<br />
-                  Riverside Drive Nairobi
+                <p className="font-sans text-xs font-medium uppercase tracking-widest text-[#C9B99A] mb-2">
+                  Office
+                </p>
+                <p className="font-sans text-[#0D0D0D] leading-relaxed">
+                  Riverside Close, opposite Oyster Paradise<br />
+                  Riverside Drive, Nairobi
                 </p>
               </div>
-            </div>
-            
-            <div className="flex items-start space-x-4">
-              <Clock className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+
               <div>
-                <h3 className="font-semibold text-foreground mb-2">Website</h3>
-                <p className="text-muted-foreground">www.smartstaffingke.com</p>
+                <p className="font-sans text-xs font-medium uppercase tracking-widest text-[#C9B99A] mb-2">
+                  Web
+                </p>
+                <a
+                  href="https://www.smartstaffingke.com"
+                  className="font-sans text-[#0D0D0D] hover:text-[#1A3A2A] transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  www.smartstaffingke.com
+                </a>
               </div>
             </div>
           </div>
-          
-          <div className="bg-card p-8 rounded-lg shadow-sm">
-            <h3 className="text-2xl font-semibold text-card-foreground mb-6">Send us a Message</h3>
-            <form className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-card-foreground mb-2">First Name</label>
-                  <input 
-                    type="text" 
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
-                    placeholder="Your first name"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-card-foreground mb-2">Last Name</label>
-                  <input 
-                    type="text" 
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
-                    placeholder="Your last name"
-                  />
+
+          {/* Right: form */}
+          <div>
+            {submitted ? (
+              <div className="h-full flex flex-col justify-center">
+                <div className="pt-12 border-t-2 border-[#1A3A2A]">
+                  <h3 className="font-display font-bold text-[#1A3A2A] mb-3"
+                    style={{ fontSize: '1.5rem' }}>
+                    Message received.
+                  </h3>
+                  <p className="font-sans text-[#6B7063]">
+                    We will be in touch within one business day.
+                  </p>
                 </div>
               </div>
-              
-              <div>
-                <label className="block text-sm font-medium text-card-foreground mb-2">Email</label>
-                <input 
-                  type="email" 
-                  className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
-                  placeholder="your.email@example.com"
-                />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-medium text-card-foreground mb-2">Phone</label>
-                <input 
-                  type="tel" 
-                  className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
-                  placeholder="Your phone number"
-                />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-medium text-card-foreground mb-2">Message</label>
-                <textarea 
-                  rows={4}
-                  className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary resize-none"
-                  placeholder="Tell us about your HR needs..."
-                ></textarea>
-              </div>
-              
-              <Button className="w-full flex items-center justify-center space-x-2">
-                <span>Send Message</span>
-                <ArrowRight className="h-5 w-5" />
-              </Button>
-            </form>
+            ) : (
+              <form onSubmit={handleSubmit} className="flex flex-col gap-6" noValidate>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <label
+                      htmlFor="contact-first-name"
+                      className="block font-sans text-sm font-medium text-[#0D0D0D] mb-2"
+                    >
+                      First Name
+                    </label>
+                    <input
+                      id="contact-first-name"
+                      type="text"
+                      required
+                      className="ss-input"
+                      placeholder="Your first name"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      htmlFor="contact-last-name"
+                      className="block font-sans text-sm font-medium text-[#0D0D0D] mb-2"
+                    >
+                      Last Name
+                    </label>
+                    <input
+                      id="contact-last-name"
+                      type="text"
+                      required
+                      className="ss-input"
+                      placeholder="Your last name"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="contact-email"
+                    className="block font-sans text-sm font-medium text-[#0D0D0D] mb-2"
+                  >
+                    Email
+                  </label>
+                  <input
+                    id="contact-email"
+                    type="email"
+                    required
+                    className="ss-input"
+                    placeholder="your.email@company.com"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="contact-organisation"
+                    className="block font-sans text-sm font-medium text-[#0D0D0D] mb-2"
+                  >
+                    Organisation
+                  </label>
+                  <input
+                    id="contact-organisation"
+                    type="text"
+                    className="ss-input"
+                    placeholder="Your organisation name"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="contact-message"
+                    className="block font-sans text-sm font-medium text-[#0D0D0D] mb-2"
+                  >
+                    What are you working on?
+                  </label>
+                  <textarea
+                    id="contact-message"
+                    rows={5}
+                    className="ss-input resize-none"
+                    placeholder="Describe the challenge or what you'd like to discuss."
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  id="contact-submit"
+                  className="btn-primary self-start"
+                >
+                  Send Message
+                </button>
+              </form>
+            )}
           </div>
+
         </div>
       </div>
     </section>

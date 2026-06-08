@@ -1,40 +1,60 @@
-
-import { AlertTriangle, Users, HelpCircle, Frown, TrendingDown } from 'lucide-react';
-
 const Reality = () => {
-  const challenges = [
-    { icon: Users, text: "Misaligned leadership" },
-    { icon: HelpCircle, text: "Unclear roles and expectations" },
-    { icon: AlertTriangle, text: "Weak or undefined organizational culture" },
-    { icon: Frown, text: "Disengaged employees" },
-  ];
-
   return (
-    <section className="py-20 bg-gradient-to-br from-destructive/5 to-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">The Reality</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Most organizations are not struggling with strategy. They are struggling with execution. 
-            And execution is rarely a systems problem—it is a <strong className="text-foreground">people and alignment challenge</strong>.
+    <section className="bg-white section-padding" aria-label="The challenge section">
+      <div className="site-container">
+
+        {/* Full-width editorial pull-quote */}
+        <div className="max-w-4xl">
+          <span className="section-label">The Challenge</span>
+          <blockquote
+            className="font-display text-[#0D0D0D] mb-8"
+            style={{
+              fontSize: 'clamp(2rem, 4vw, 3.25rem)',
+              lineHeight: '1.1',
+              letterSpacing: '-0.02em',
+              fontWeight: 700,
+            }}
+          >
+            Most organizations fail at execution, not strategy.
+          </blockquote>
+          <p className="font-sans text-lg text-[#6B7063] max-w-2xl leading-relaxed">
+            The gap is almost never the business plan. It is the people and alignment behind it.
+            When leadership, roles, and culture pull in different directions, performance suffers.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 max-w-4xl mx-auto">
-          {challenges.map((item, index) => (
-            <div key={index} className="bg-card p-6 rounded-lg shadow-sm text-center">
-              <item.icon className="h-10 w-10 text-destructive mx-auto mb-3" />
-              <p className="font-medium text-card-foreground">{item.text}</p>
+        {/* Challenge grid */}
+        <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-[#E5E0D8]">
+          {[
+            {
+              number: "01",
+              challenge: "Misaligned leadership",
+              detail: "Executives and managers working from different assumptions about what success looks like."
+            },
+            {
+              number: "02",
+              challenge: "Unclear roles",
+              detail: "Accountability gaps that let problems persist because no one owns them."
+            },
+            {
+              number: "03",
+              challenge: "Undefined culture",
+              detail: "Behaviour norms that exist in practice but conflict with stated values."
+            },
+            {
+              number: "04",
+              challenge: "Disengaged teams",
+              detail: "People going through the motions, without connection to outcomes."
+            },
+          ].map((item) => (
+            <div key={item.number} className="bg-[#F9F8F6] p-8">
+              <p className="font-display text-5xl font-bold text-[#C9B99A] mb-4">{item.number}</p>
+              <p className="font-sans font-600 text-[#0D0D0D] mb-3 font-semibold">{item.challenge}</p>
+              <p className="font-sans text-sm text-[#6B7063] leading-relaxed">{item.detail}</p>
             </div>
           ))}
         </div>
 
-        <div className="bg-card p-8 rounded-lg shadow-sm max-w-2xl mx-auto text-center">
-          <TrendingDown className="h-12 w-12 text-destructive mx-auto mb-4" />
-          <p className="text-lg text-muted-foreground">
-            The result? <strong className="text-foreground">Declining productivity, slow decision-making, and underperformance.</strong>
-          </p>
-        </div>
       </div>
     </section>
   );

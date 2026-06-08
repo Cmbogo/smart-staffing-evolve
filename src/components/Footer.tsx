@@ -1,49 +1,153 @@
-
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const serviceLinks = [
+    "Organizational Transformation",
+    "Culture & Leadership",
+    "Strategy Execution",
+    "Employee Engagement",
+    "HR Systems & Policies",
+    "HR Audits & Compliance",
+    "Talent Acquisition",
+  ];
+
+  const industryLinks = [
+    "Security & Risk Management",
+    "Banking & Financial Services",
+    "Healthcare & Pharmaceuticals",
+    "Hospitality & Tourism",
+    "Manufacturing & Logistics",
+    "NGOs & Development Sector",
+    "Retail & FMCG",
+    "Technology & Telecoms",
+    "Construction & Real Estate",
+  ];
+
   return (
-    <footer className="bg-primary text-primary-foreground py-8">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8">
-          <div>
-            <div className="flex items-center space-x-3 mb-4">
-              <img 
-                src="/lovable-uploads/14e992c7-b62d-4a7c-8474-48692bdaad6d.png" 
-                alt="Smart Staffing Logo" 
-                className="h-12 w-auto object-contain"
+    <footer style={{ background: '#0D2B1A' }} aria-label="Site footer">
+      <div className="site-container pt-16 pb-8">
+
+        {/* 4-column grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 pb-14">
+
+          {/* Col 1: Logo + tagline */}
+          <div className="lg:col-span-1">
+            <Link to="/" aria-label="Smart Staffing home">
+              <img
+                src="/lovable-uploads/14e992c7-b62d-4a7c-8474-48692bdaad6d.png"
+                alt="Smart Staffing & Management Consultancy"
+                width={140}
+                height={56}
+                loading="lazy"
+                className="h-12 w-auto object-contain mb-5"
               />
-            </div>
-            <p className="text-sm opacity-90 mb-4">
+            </Link>
+            <p
+              className="font-display italic text-white/60 leading-relaxed"
+              style={{ fontSize: '1rem' }}
+            >
               Empowering organizations through strategic human capital management.
             </p>
           </div>
-          
+
+          {/* Col 2: Services */}
           <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-sm">
-              <li><Link to="/" className="opacity-90 hover:opacity-100 transition-opacity">Home</Link></li>
-              <li><Link to="/about" className="opacity-90 hover:opacity-100 transition-opacity">About</Link></li>
-              <li><Link to="/services" className="opacity-90 hover:opacity-100 transition-opacity">Services</Link></li>
-              <li><Link to="/contact" className="opacity-90 hover:opacity-100 transition-opacity">Contact</Link></li>
+            <p className="font-sans text-xs font-medium uppercase tracking-widest text-[#C9B99A] mb-5">
+              Services
+            </p>
+            <ul className="flex flex-col gap-3">
+              {serviceLinks.map((item) => (
+                <li key={item}>
+                  <Link
+                    to="/services"
+                    className="font-sans text-sm text-white/60 hover:text-white transition-colors duration-150"
+                  >
+                    {item}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
-          
+
+          {/* Col 3: Industries */}
           <div>
-            <h4 className="font-semibold mb-4">Contact Info</h4>
-            <div className="space-y-2 text-sm opacity-90">
-              <p>0716857000</p>
-              <p>Info@smartstaffingke.com</p>
-              <p>Riverside Drive, Nairobi</p>
+            <p className="font-sans text-xs font-medium uppercase tracking-widest text-[#C9B99A] mb-5">
+              Industries
+            </p>
+            <ul className="flex flex-col gap-3">
+              {industryLinks.map((item) => (
+                <li key={item}>
+                  <Link
+                    to="/industries"
+                    className="font-sans text-sm text-white/60 hover:text-white transition-colors duration-150"
+                  >
+                    {item}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Col 4: Contact */}
+          <div>
+            <p className="font-sans text-xs font-medium uppercase tracking-widest text-[#C9B99A] mb-5">
+              Contact
+            </p>
+            <div className="flex flex-col gap-4">
+              <p className="font-sans text-sm text-white/60">0716 857 000</p>
+              <div>
+                <a
+                  href="mailto:Info@smartstaffingke.com"
+                  className="font-sans text-sm text-white/60 hover:text-white transition-colors block"
+                >
+                  Info@smartstaffingke.com
+                </a>
+                <a
+                  href="mailto:EMwangi@smartstaffingke.com"
+                  className="font-sans text-sm text-white/60 hover:text-white transition-colors block"
+                >
+                  EMwangi@smartstaffingke.com
+                </a>
+              </div>
+              <p className="font-sans text-sm text-white/60 leading-relaxed">
+                Riverside Close, Riverside Drive<br />
+                Nairobi, Kenya
+              </p>
+              <a
+                href="https://www.smartstaffingke.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-sans text-sm text-white/60 hover:text-white transition-colors"
+              >
+                www.smartstaffingke.com
+              </a>
             </div>
           </div>
+
         </div>
-        
-        <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
-          <p className="text-sm opacity-90">
-            © 2025 Smart Staffing and Management Consultancy Ltd. All rights reserved.
+
+        {/* Stone divider + copyright */}
+        <div
+          className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4"
+          style={{ borderTop: '1px solid #C9B99A' }}
+        >
+          <p className="font-sans text-xs text-white/40 text-center md:text-left">
+            &copy; {new Date().getFullYear()} Smart Staffing and Management Consultancy Ltd.
+            All rights reserved.
           </p>
+          <div className="flex items-center gap-6">
+            <Link to="/about" className="font-sans text-xs text-white/40 hover:text-white/70 transition-colors">
+              About
+            </Link>
+            <Link to="/contact" className="font-sans text-xs text-white/40 hover:text-white/70 transition-colors">
+              Contact
+            </Link>
+            <Link to="/careers" className="font-sans text-xs text-white/40 hover:text-white/70 transition-colors">
+              Careers
+            </Link>
+          </div>
         </div>
+
       </div>
     </footer>
   );

@@ -1,31 +1,64 @@
-
-import { CheckCircle, Briefcase, Globe, Wrench, Rocket } from 'lucide-react';
-
 const WhyChooseUs = () => {
-  const reasons = [
-    { icon: Briefcase, text: "Over 10 years of HR leadership experience" },
-    { icon: Globe, text: "Cross-industry exposure (Banking, Security Printing, Hospitality, Consulting)" },
-    { icon: Wrench, text: "A practical, business-focused approach" },
-    { icon: Rocket, text: "Solutions that go beyond policy into real execution" },
-  ];
-
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Why Us</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            We don't just provide HR solutions—we solve business problems through people.
-          </p>
-        </div>
+    <section
+      className="section-padding"
+      style={{ background: '#1A3A2A' }}
+      aria-label="Why Smart Staffing"
+    >
+      <div className="site-container">
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-          {reasons.map((reason, index) => (
-            <div key={index} className="bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
-              <reason.icon className="h-12 w-12 text-primary mx-auto mb-4" />
-              <p className="text-card-foreground font-medium">{reason.text}</p>
-            </div>
-          ))}
+          {/* Left: headline */}
+          <div>
+            <span className="section-label" style={{ color: '#C9B99A' }}>The Difference</span>
+            <h2
+              className="font-display font-bold text-white mb-8"
+              style={{ fontSize: 'clamp(2rem, 4vw, 3.25rem)', lineHeight: '1.1', letterSpacing: '-0.02em' }}
+            >
+              HR that works in practice, not just on paper.
+            </h2>
+            <p className="font-sans text-white/70 text-lg leading-relaxed">
+              We have held senior HR roles across banking, security, hospitality, and consulting.
+              We know what organizations actually face, and we design solutions that fit those realities.
+            </p>
+          </div>
+
+          {/* Right: differentiators */}
+          <div className="flex flex-col gap-8">
+            {[
+              {
+                stat: "10+",
+                label: "Years leading HR functions in complex organizations",
+              },
+              {
+                stat: "Cross-sector",
+                label: "Experience across banking, security, hospitality, and consulting",
+              },
+              {
+                stat: "Practical",
+                label: "Solutions that move from strategy into real execution",
+              },
+              {
+                stat: "Business-first",
+                label: "Every recommendation tied to a measurable business outcome",
+              },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="flex gap-6 items-start pb-8 border-b border-white/15 last:border-0 last:pb-0"
+              >
+                <p
+                  className="font-display font-bold text-[#C9B99A] flex-shrink-0"
+                  style={{ fontSize: '2rem', lineHeight: 1, minWidth: '80px' }}
+                >
+                  {item.stat}
+                </p>
+                <p className="font-sans text-white/80 text-base leading-relaxed self-center">
+                  {item.label}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

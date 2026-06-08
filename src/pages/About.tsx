@@ -1,75 +1,83 @@
-
-import { Eye, Target, Heart, Briefcase, Wrench, Users, ClipboardCheck, Shield } from 'lucide-react';
 import Header from '@/components/Header';
+import About from '@/components/About';
 import Footer from '@/components/Footer';
+import { Link } from 'react-router-dom';
 
 const AboutPage = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">About Smart Staffing and Management Consultancy</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              We help organizations align people, culture, and strategy to drive business performance 
-              through practical, results-driven solutions.
+      <main>
+        {/* Page hero — dark green */}
+        <section
+          className="section-padding"
+          style={{ background: '#1A3A2A' }}
+          aria-label="About page hero"
+        >
+          <div className="site-container">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <span className="section-label" style={{ color: '#C9B99A' }}>About Us</span>
+                <h1
+                  className="font-display font-bold text-white"
+                  style={{
+                    fontSize: 'clamp(3rem, 6vw, 5rem)',
+                    lineHeight: '1.08',
+                    letterSpacing: '-0.025em',
+                  }}
+                >
+                  Who we are.
+                </h1>
+                <p className="font-sans text-white/70 text-lg mt-6 max-w-md leading-relaxed">
+                  Empowering organizations through strategic human capital management.
+                </p>
+              </div>
+
+              {/* Editorial image — About page */}
+              <div
+                className="relative overflow-hidden"
+                style={{ aspectRatio: '4/3', borderRadius: 0 }}
+              >
+                <img
+                  src="/lovable-uploads/about-team.png"
+                  alt="Smart Staffing professional consultancy team in Nairobi"
+                  width={800}
+                  height={600}
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                  style={{ borderRadius: 0 }}
+                />
+                <div
+                  className="absolute inset-0"
+                  style={{ background: 'rgba(13, 43, 26, 0.2)' }}
+                  aria-hidden="true"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* About component */}
+        <About />
+
+        {/* Contact CTA strip */}
+        <section
+          style={{ background: '#F9F8F6', borderTop: '1px solid #E5E0D8' }}
+          className="py-16"
+        >
+          <div className="site-container flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <p
+              className="font-display font-bold text-[#0D0D0D]"
+              style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', lineHeight: '1.2' }}
+            >
+              Empowering organizations through strategic human capital management.
             </p>
+            <Link to="/contact" id="about-page-cta" className="btn-primary flex-shrink-0">
+              Talk to Us
+            </Link>
           </div>
-          
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-card p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
-              <Eye className="h-16 w-16 text-primary mx-auto mb-6" />
-              <h3 className="text-xl font-semibold text-card-foreground mb-4">Vision</h3>
-              <p className="text-muted-foreground">
-                To be a trusted partner in transforming organizations by aligning people, culture, and strategy for sustainable performance.
-              </p>
-            </div>
-            
-            <div className="bg-card p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
-              <Target className="h-16 w-16 text-primary mx-auto mb-6" />
-              <h3 className="text-xl font-semibold text-card-foreground mb-4">Mission</h3>
-              <p className="text-muted-foreground">
-                To support organizations in solving critical people and performance challenges through practical, business-focused solutions that deliver measurable results.
-              </p>
-            </div>
-            
-            <div className="bg-card p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
-              <Heart className="h-16 w-16 text-primary mx-auto mb-6" />
-              <h3 className="text-xl font-semibold text-card-foreground mb-4">Social Responsibility</h3>
-              <p className="text-muted-foreground">
-                We are committed to promoting fair employment practices and supporting the development of sustainable, high-performing workplaces.
-              </p>
-            </div>
-          </div>
-          
-          <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg p-8">
-            <h3 className="text-2xl font-semibold text-foreground mb-6 text-center">Our Values</h3>
-            <div className="grid md:grid-cols-5 gap-6">
-              <div className="text-center">
-                <Briefcase className="h-12 w-12 text-primary mx-auto mb-3" />
-                <h4 className="font-semibold text-card-foreground">Business-Centered Thinking</h4>
-              </div>
-              <div className="text-center">
-                <Wrench className="h-12 w-12 text-primary mx-auto mb-3" />
-                <h4 className="font-semibold text-card-foreground">Practicality Over Theory</h4>
-              </div>
-              <div className="text-center">
-                <Users className="h-12 w-12 text-primary mx-auto mb-3" />
-                <h4 className="font-semibold text-card-foreground">Partnership & Collaboration</h4>
-              </div>
-              <div className="text-center">
-                <ClipboardCheck className="h-12 w-12 text-primary mx-auto mb-3" />
-                <h4 className="font-semibold text-card-foreground">Accountability for Results</h4>
-              </div>
-              <div className="text-center">
-                <Shield className="h-12 w-12 text-primary mx-auto mb-3" />
-                <h4 className="font-semibold text-card-foreground">Integrity & Professionalism</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      </main>
       <Footer />
     </div>
   );

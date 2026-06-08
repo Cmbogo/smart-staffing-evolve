@@ -1,51 +1,92 @@
-
-import { ArrowRight, MessageSquare, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <section id="home" className="bg-gradient-to-br from-primary/5 to-secondary/10">
-      <div className="py-24 bg-gradient-to-r from-primary/5 via-secondary/5 to-primary/5">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
-              Turning People, Culture, and Strategy into Business Performance
+    <section
+      id="home"
+      className="relative bg-[#F9F8F6] min-h-[90vh] flex items-center overflow-hidden"
+      aria-label="Hero section"
+    >
+      {/* Layout: headline left, image right */}
+      <div className="site-container w-full">
+        <div className="grid lg:grid-cols-2 gap-16 items-center py-20 lg:py-0 min-h-[90vh]">
+
+          {/* Left: Headline + CTA */}
+          <div className="flex flex-col justify-center">
+            <span className="section-label">Smart Staffing &amp; Management Consultancy</span>
+
+            <h1 className="display-headline text-[#0D0D0D] mb-8 font-display">
+              Empowering organizations<br />
+              through strategic human capital<br />
+              management.
             </h1>
-            
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              We help organizations align leadership, people, and systems to improve productivity, 
-              strengthen culture, and deliver sustainable results.
+
+            <p className="font-sans text-lg text-[#6B7063] mb-10 leading-relaxed max-w-md">
+              The right people, in the right roles, from day one.
             </p>
 
-            <p className="text-base text-muted-foreground/80 italic max-w-2xl mx-auto">
-              Because when people, culture, and strategy are not aligned, performance suffers—no matter 
-              how strong the business plan is.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
-              <Link 
+            <div className="flex items-center gap-4">
+              <Link
                 to="/contact"
-                className="bg-primary text-primary-foreground px-8 py-4 rounded-lg hover:bg-primary/90 transition-colors flex items-center justify-center space-x-2 text-lg font-semibold"
+                id="hero-talk-to-us"
+                className="btn-primary"
               >
-                <span>Book a Consultation</span>
-                <ArrowRight className="h-5 w-5" />
+                Talk to Us
               </Link>
-              <Link 
-                to="/contact"
-                className="border-2 border-primary text-primary px-8 py-4 rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center space-x-2 text-lg font-semibold"
+              <Link
+                to="/services"
+                id="hero-see-services"
+                className="btn-secondary"
               >
-                <MessageSquare className="h-5 w-5" />
-                <span>Start a Conversation</span>
-              </Link>
-              <Link 
-                to="/contact"
-                className="border-2 border-secondary text-secondary-foreground px-8 py-4 rounded-lg hover:bg-secondary transition-colors flex items-center justify-center space-x-2 text-lg font-semibold"
-              >
-                <FileText className="h-5 w-5" />
-                <span>Request a Proposal</span>
+                See How It Works
               </Link>
             </div>
+
+            {/* Credibility strip */}
+            <div className="mt-16 pt-8 border-t border-[#E5E0D8] flex gap-10">
+              <div>
+                <p className="font-display text-3xl font-bold text-[#1A3A2A]">10+</p>
+                <p className="font-sans text-sm text-[#6B7063] mt-0.5">Years of HR leadership</p>
+              </div>
+              <div>
+                <p className="font-display text-3xl font-bold text-[#1A3A2A]">9</p>
+                <p className="font-sans text-sm text-[#6B7063] mt-0.5">Industries served</p>
+              </div>
+              <div>
+                <p className="font-display text-3xl font-bold text-[#1A3A2A]">East Africa</p>
+                <p className="font-sans text-sm text-[#6B7063] mt-0.5">Regional reach</p>
+              </div>
+            </div>
           </div>
+
+          {/* Right: Editorial image */}
+          <div className="relative h-[500px] lg:h-[90vh] hidden lg:block">
+            <div className="absolute inset-0 overflow-hidden">
+              <img
+                src="/lovable-uploads/hero-editorial.png"
+                alt="Professional team in executive meeting — Smart Staffing consultancy"
+                width={800}
+                height={1000}
+                fetchPriority="high"
+                loading="eager"
+                className="w-full h-full object-cover"
+                style={{ borderRadius: 0 }}
+              />
+              {/* Dark green tint overlay */}
+              <div
+                className="absolute inset-0"
+                style={{ background: 'rgba(13, 43, 26, 0.35)' }}
+                aria-hidden="true"
+              />
+            </div>
+            {/* Stone accent line */}
+            <div
+              className="absolute left-0 top-1/4 w-1 h-32"
+              style={{ background: '#C9B99A' }}
+              aria-hidden="true"
+            />
+          </div>
+
         </div>
       </div>
     </section>

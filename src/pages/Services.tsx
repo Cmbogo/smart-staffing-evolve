@@ -1,73 +1,61 @@
-
-import { RefreshCw, Users, Target, HeartHandshake, FileText, Shield, UserSearch } from 'lucide-react';
 import Header from '@/components/Header';
+import Services from '@/components/Services';
 import Footer from '@/components/Footer';
+import { Link } from 'react-router-dom';
 
 const ServicesPage = () => {
-  const services = [
-    {
-      icon: RefreshCw,
-      title: "Organizational Transformation",
-      description: "Aligning structures, roles, and people to business goals during periods of change."
-    },
-    {
-      icon: Users,
-      title: "Culture & Leadership Alignment",
-      description: "Defining and embedding the leadership behaviours and culture that drive performance."
-    },
-    {
-      icon: Target,
-      title: "Strategy Execution & Performance Alignment",
-      description: "Translating strategy into clear roles, KPIs, and accountability frameworks."
-    },
-    {
-      icon: HeartHandshake,
-      title: "Employee Engagement & Productivity",
-      description: "Identifying root causes of disengagement and implementing practical performance solutions."
-    },
-    {
-      icon: FileText,
-      title: "HR Systems, Policies & Contracts",
-      description: "Designing structured HR frameworks that promote consistency and scalability."
-    },
-    {
-      icon: Shield,
-      title: "HR Audits & Compliance",
-      description: "Assessing HR practices to identify gaps, ensure compliance, and mitigate risk."
-    },
-    {
-      icon: UserSearch,
-      title: "Strategic Talent Acquisition & Workforce Planning",
-      description: "Attracting and aligning talent to business strategy and long-term growth."
-    }
-  ];
-
   return (
     <div className="min-h-screen">
       <Header />
-      <section className="py-20 bg-gradient-to-br from-secondary/5 to-primary/5">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Services</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              We partner with organizations to solve critical people and performance challenges.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div 
-                key={index}
-                className="bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"
+      <main>
+        {/* Page hero — off-white */}
+        <section
+          className="section-padding"
+          style={{ background: '#F9F8F6', borderBottom: '1px solid #E5E0D8' }}
+          aria-label="Services page hero"
+        >
+          <div className="site-container">
+            <div className="max-w-3xl">
+              <span className="section-label">Our Services</span>
+              <h1
+                className="font-display font-bold text-[#0D0D0D] mb-6"
+                style={{
+                  fontSize: 'clamp(3rem, 6vw, 5rem)',
+                  lineHeight: '1.08',
+                  letterSpacing: '-0.025em',
+                }}
               >
-                <service.icon className="h-12 w-12 text-primary mb-4" />
-                <h3 className="text-xl font-semibold text-card-foreground mb-3">{service.title}</h3>
-                <p className="text-muted-foreground">{service.description}</p>
-              </div>
-            ))}
+                What we do.
+              </h1>
+              <p className="font-sans text-[#6B7063] text-xl leading-relaxed max-w-2xl">
+                Seven practice areas. Each one designed to address a specific and common challenge
+                that organizations face when people, culture, and strategy are not aligned.
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        {/* Services component */}
+        <Services />
+
+        {/* Industries cross-link */}
+        <section className="bg-white py-16" style={{ borderTop: '1px solid #E5E0D8' }}>
+          <div className="site-container flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div>
+              <span className="section-label mb-2 block">Looking for sector-specific expertise?</span>
+              <p
+                className="font-display font-bold text-[#0D0D0D]"
+                style={{ fontSize: '1.5rem', lineHeight: '1.2' }}
+              >
+                We work across nine industries in East Africa.
+              </p>
+            </div>
+            <Link to="/industries" id="services-industries-link" className="btn-secondary flex-shrink-0">
+              See Industries
+            </Link>
+          </div>
+        </section>
+      </main>
       <Footer />
     </div>
   );

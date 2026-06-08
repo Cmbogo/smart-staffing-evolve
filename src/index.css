@@ -1,97 +1,261 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+/* ============================================================
+   SMART STAFFING & MANAGEMENT CONSULTANCY — DESIGN SYSTEM
+   Brand: McKinsey / BCG editorial professionalism
+   Typography: Cormorant Garamond (display) + DM Sans (body)
+   ============================================================ */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 15%; /* Dark charcoal for better readability */
+    /* Brand palette */
+    --brand-green: #1A3A2A;
+    --brand-dark: #0D2B1A;
+    --brand-offwhite: #F9F8F6;
+    --brand-text: #0D0D0D;
+    --brand-stone: #C9B99A;
+    --brand-white: #FFFFFF;
+    --brand-border: #E5E0D8;
+    --brand-muted: #6B7063;
+
+    /* shadcn/ui token mapping to brand */
+    --background: 40 14% 97%;       /* #F9F8F6 warm off-white */
+    --foreground: 0 0% 5%;          /* #0D0D0D near-black */
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 20%; /* Professional dark gray */
+    --card-foreground: 0 0% 5%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 15%;
+    --popover-foreground: 0 0% 5%;
 
-    --primary: 126 95% 7%; /* Dark Green #032806 */
-    --primary-foreground: 0 0% 98%;
+    --primary: 152 38% 16%;         /* #1A3A2A deep forest green */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 97 58% 81%; /* Soft Light Green #C3E6B6 */
-    --secondary-foreground: 0 0% 15%; /* Dark text on light background */
+    --secondary: 40 14% 97%;        /* off-white as secondary */
+    --secondary-foreground: 0 0% 5%;
 
-    --muted: 97 58% 85%;
-    --muted-foreground: 0 0% 45%; /* Professional gray for muted text */
+    --muted: 40 10% 90%;
+    --muted-foreground: 90 5% 42%;  /* #6B7063 muted text */
 
-    --accent: 97 58% 85%;
-    --accent-foreground: 0 0% 15%;
+    --accent: 36 30% 70%;           /* #C9B99A warm stone */
+    --accent-foreground: 0 0% 5%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 97 58% 88%;
-    --input: 97 58% 88%;
-    --ring: 126 95% 7%;
+    --border: 36 20% 88%;           /* #E5E0D8 */
+    --input: 36 20% 88%;
+    --ring: 152 38% 16%;            /* green focus ring */
 
-    --radius: 0.5rem;
+    --radius: 3px;                   /* Max 4px per brief */
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 0 0% 45%;
-    --sidebar-primary: 126 95% 7%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 97 58% 85%;
-    --sidebar-accent-foreground: 0 0% 15%;
-    --sidebar-border: 97 58% 88%;
-    --sidebar-ring: 126 95% 7%;
-  }
-
-  .dark {
-    --background: 126 95% 7%;
-    --foreground: 0 0% 98%;
-
-    --card: 126 95% 7%;
-    --card-foreground: 0 0% 98%;
-
-    --popover: 126 95% 7%;
-    --popover-foreground: 0 0% 98%;
-
-    --primary: 0 0% 98%;
-    --primary-foreground: 126 95% 7%;
-
-    --secondary: 126 40% 20%;
-    --secondary-foreground: 0 0% 98%;
-
-    --muted: 126 40% 20%;
-    --muted-foreground: 97 58% 75%;
-
-    --accent: 126 40% 20%;
-    --accent-foreground: 0 0% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 126 40% 20%;
-    --input: 126 40% 20%;
-    --ring: 97 58% 81%;
-    --sidebar-background: 126 95% 7%;
-    --sidebar-foreground: 97 58% 85%;
-    --sidebar-primary: 97 58% 81%;
-    --sidebar-primary-foreground: 126 95% 7%;
-    --sidebar-accent: 126 40% 15%;
-    --sidebar-accent-foreground: 97 58% 85%;
-    --sidebar-border: 126 40% 15%;
-    --sidebar-ring: 97 58% 81%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 5%;
+    --sidebar-primary: 152 38% 16%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 40 14% 97%;
+    --sidebar-accent-foreground: 0 0% 5%;
+    --sidebar-border: 36 20% 88%;
+    --sidebar-ring: 152 38% 16%;
   }
 }
 
 @layer base {
   * {
     @apply border-border;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 
   body {
-    @apply bg-background text-foreground;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    background-color: var(--brand-offwhite);
+    color: var(--brand-text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: var(--brand-text);
+  }
+
+  h1 { font-size: clamp(3rem, 6vw, 5rem); }
+  h2 { font-size: clamp(2rem, 4vw, 3.25rem); }
+  h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
+
+  p {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    line-height: 1.7;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+@layer components {
+  /* ---- Buttons ---- */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--brand-green);
+    color: var(--brand-white);
+    padding: 0.875rem 2rem;
+    border-radius: 3px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    border: 2px solid var(--brand-green);
+    cursor: pointer;
+    transition: background-color 180ms ease, color 180ms ease;
+  }
+  .btn-primary:hover {
+    background-color: var(--brand-dark);
+    border-color: var(--brand-dark);
+  }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: transparent;
+    color: var(--brand-green);
+    padding: 0.875rem 2rem;
+    border-radius: 3px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    border: 2px solid var(--brand-green);
+    cursor: pointer;
+    transition: background-color 180ms ease, color 180ms ease;
+  }
+  .btn-secondary:hover {
+    background-color: var(--brand-green);
+    color: var(--brand-white);
+  }
+
+  /* ---- Section label (overline text above headings) ---- */
+  .section-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--brand-stone);
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  /* ---- Display headline (tagline size) ---- */
+  .display-headline {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(3.5rem, 7vw, 5.5rem);
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  /* ---- Stone divider ---- */
+  .divider-stone {
+    border: none;
+    border-top: 1px solid var(--brand-stone);
+    opacity: 0.5;
+  }
+
+  /* ---- Container ---- */
+  .site-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .site-container {
+      padding: 0 3rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .site-container {
+      padding: 0 4rem;
+    }
+  }
+
+  /* ---- Section spacing ---- */
+  .section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+  }
+
+  /* ---- Card ---- */
+  .ss-card {
+    background: #ffffff;
+    border: 1px solid var(--brand-border);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+  }
+
+  /* ---- Industries dropdown ---- */
+  .industries-dropdown {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-6px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 200ms ease, transform 200ms ease;
+    background: #ffffff;
+    border: 1px solid var(--brand-border);
+    box-shadow: 0 8px 32px rgba(13, 43, 26, 0.12);
+    min-width: 640px;
+    z-index: 100;
+  }
+
+  .industries-dropdown.open {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  /* ---- Form inputs ---- */
+  .ss-input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 1px solid var(--brand-border);
+    border-radius: 3px;
+    background: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9375rem;
+    color: var(--brand-text);
+    outline: none;
+    transition: border-color 150ms ease;
+  }
+  .ss-input:focus {
+    border-color: var(--brand-green);
+    box-shadow: 0 0 0 3px rgba(26, 58, 42, 0.1);
+  }
+  .ss-input::placeholder {
+    color: var(--brand-muted);
   }
 }
