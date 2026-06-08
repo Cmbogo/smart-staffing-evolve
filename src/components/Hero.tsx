@@ -4,12 +4,13 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative bg-[#F9F8F6] min-h-[90vh] flex items-center overflow-hidden"
+      className="relative bg-[#F9F8F6] flex items-center overflow-hidden"
+      style={{ height: 'calc(100vh - 80px)' }}
       aria-label="Hero section"
     >
       {/* Layout: headline left, image right */}
       <div className="site-container w-full">
-        <div className="grid lg:grid-cols-2 gap-16 items-center py-20 lg:py-0 min-h-[90vh]">
+        <div className="grid lg:grid-cols-2 gap-16 items-center h-full">
 
           {/* Left: Headline + CTA */}
           <div className="flex flex-col justify-center">
@@ -43,7 +44,7 @@ const Hero = () => {
             </div>
 
             {/* Credibility strip */}
-            <div className="mt-16 pt-8 border-t border-[#E5E0D8] flex gap-10">
+            <div className="mt-8 pt-6 border-t border-[#E5E0D8] flex gap-10">
               <div>
                 <p className="font-display text-3xl font-bold text-[#1A3A2A]">10+</p>
                 <p className="font-sans text-sm text-[#6B7063] mt-0.5">Years of HR leadership</p>
@@ -60,7 +61,7 @@ const Hero = () => {
           </div>
 
           {/* Right: Editorial image */}
-          <div className="relative h-[500px] lg:h-[90vh] hidden lg:block">
+          <div className="relative hidden lg:block" style={{ height: 'calc(100vh - 80px)' }}>
             <div className="absolute inset-0 overflow-hidden">
               <img
                 src="/lovable-uploads/hero-editorial.png"
