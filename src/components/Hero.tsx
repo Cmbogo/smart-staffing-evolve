@@ -4,91 +4,191 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative bg-[#F9F8F6] flex items-center overflow-hidden"
-      style={{ height: 'calc(100vh - 80px)' }}
+      className="relative bg-[#F9F8F6]"
+      style={{
+        height: 'calc(100svh - 80px)',
+        minHeight: '580px',
+        maxHeight: '900px',
+        overflow: 'hidden',
+      }}
       aria-label="Hero section"
     >
-      {/* Layout: headline left, image right */}
-      <div className="site-container w-full">
-        <div className="grid lg:grid-cols-2 gap-16 items-center h-full">
+      {/* Full-height two-column grid */}
+      <div className="grid lg:grid-cols-2 h-full">
 
-          {/* Left: Headline + CTA */}
-          <div className="flex flex-col justify-center">
-            <span className="section-label">Smart Staffing &amp; Management Consultancy</span>
+        {/* ── LEFT COLUMN ── */}
+        <div
+          className="flex flex-col justify-center"
+          style={{ padding: 'clamp(1.5rem, 4vw, 3.5rem) clamp(1.5rem, 5vw, 5rem)' }}
+        >
+          {/* Overline */}
+          <span
+            className="font-sans uppercase tracking-widest text-[#C9B99A]"
+            style={{ fontSize: '0.68rem', letterSpacing: '0.14em', marginBottom: '0.6rem', display: 'block' }}
+          >
+            Smart Staffing &amp; Management Consultancy
+          </span>
 
-            <h1 className="display-headline text-[#0D0D0D] mb-8 font-display">
-              Empowering organizations<br />
-              through strategic human capital<br />
-              management.
-            </h1>
+          {/* Headline */}
+          <h1
+            style={{
+              fontFamily: "'Cormorant Garamond', Georgia, serif",
+              fontSize: 'clamp(2rem, 3.8vw, 3.6rem)',
+              fontWeight: 700,
+              lineHeight: 1.1,
+              letterSpacing: '-0.02em',
+              color: '#0D0D0D',
+              marginBottom: '0.65rem',
+            }}
+          >
+            Empowering organizations<br />
+            through strategic<br />
+            human capital management.
+          </h1>
 
-            <p className="font-sans text-lg text-[#6B7063] mb-10 leading-relaxed max-w-md">
-              The right people, in the right roles, from day one.
-            </p>
+          {/* Sub-copy */}
+          <p
+            style={{
+              fontFamily: "'DM Sans', system-ui, sans-serif",
+              fontSize: 'clamp(0.875rem, 1.2vw, 1rem)',
+              color: '#6B7063',
+              lineHeight: 1.6,
+              maxWidth: '400px',
+              marginBottom: '1.1rem',
+            }}
+          >
+            The right people, in the right roles, from day one.
+          </p>
 
-            <div className="flex items-center gap-4">
-              <Link
-                to="/contact"
-                id="hero-talk-to-us"
-                className="btn-primary"
-              >
-                Talk to Us
-              </Link>
-              <Link
-                to="/services"
-                id="hero-see-services"
-                className="btn-secondary"
-              >
-                See How It Works
-              </Link>
-            </div>
-
-            {/* Credibility strip */}
-            <div className="mt-8 pt-6 border-t border-[#E5E0D8] flex gap-10">
-              <div>
-                <p className="font-display text-3xl font-bold text-[#1A3A2A]">10+</p>
-                <p className="font-sans text-sm text-[#6B7063] mt-0.5">Years of HR leadership</p>
-              </div>
-              <div>
-                <p className="font-display text-3xl font-bold text-[#1A3A2A]">9</p>
-                <p className="font-sans text-sm text-[#6B7063] mt-0.5">Industries served</p>
-              </div>
-              <div>
-                <p className="font-display text-3xl font-bold text-[#1A3A2A]">East Africa</p>
-                <p className="font-sans text-sm text-[#6B7063] mt-0.5">Regional reach</p>
-              </div>
-            </div>
+          {/* CTA row */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '1.1rem' }}>
+            <Link
+              to="/contact"
+              id="hero-talk-to-us"
+              className="btn-primary"
+              style={{ padding: '0.65rem 1.5rem', fontSize: '0.875rem' }}
+            >
+              Talk to Us
+            </Link>
+            <Link
+              to="/services"
+              id="hero-see-services"
+              className="btn-secondary"
+              style={{ padding: '0.65rem 1.5rem', fontSize: '0.875rem' }}
+            >
+              See How It Works
+            </Link>
           </div>
 
-          {/* Right: Editorial image */}
-          <div className="relative hidden lg:block" style={{ height: 'calc(100vh - 80px)' }}>
-            <div className="absolute inset-0 overflow-hidden">
-              <img
-                src="/lovable-uploads/hero-editorial.png"
-                alt="Professional team in executive meeting — Smart Staffing consultancy"
-                width={800}
-                height={1000}
-                fetchPriority="high"
-                loading="eager"
-                className="w-full h-full object-cover"
-                style={{ borderRadius: 0 }}
-              />
-              {/* Dark green tint overlay */}
-              <div
-                className="absolute inset-0"
-                style={{ background: 'rgba(13, 43, 26, 0.35)' }}
-                aria-hidden="true"
-              />
-            </div>
-            {/* Stone accent line */}
-            <div
-              className="absolute left-0 top-1/4 w-1 h-32"
-              style={{ background: '#C9B99A' }}
-              aria-hidden="true"
-            />
+          {/* Credibility strip */}
+          <div
+            style={{
+              display: 'flex',
+              gap: '2rem',
+              flexWrap: 'wrap',
+              paddingTop: '1rem',
+              borderTop: '1px solid #E5E0D8',
+            }}
+          >
+            {[
+              { value: '10+', label: 'Years of HR leadership' },
+              { value: '9', label: 'Industries served' },
+              { value: 'East Africa', label: 'Regional reach' },
+            ].map(({ value, label }) => (
+              <div key={label}>
+                <p
+                  style={{
+                    fontFamily: "'Cormorant Garamond', Georgia, serif",
+                    fontSize: 'clamp(1.4rem, 2.2vw, 2rem)',
+                    fontWeight: 700,
+                    color: '#1A3A2A',
+                    lineHeight: 1,
+                  }}
+                >
+                  {value}
+                </p>
+                <p
+                  style={{
+                    fontFamily: "'DM Sans', system-ui, sans-serif",
+                    fontSize: '0.73rem',
+                    color: '#6B7063',
+                    marginTop: '0.2rem',
+                  }}
+                >
+                  {label}
+                </p>
+              </div>
+            ))}
           </div>
-
         </div>
+
+        {/* ── RIGHT COLUMN — image panel ── */}
+        <div className="relative hidden lg:block h-full">
+          {/* Stone accent bar */}
+          <div
+            style={{
+              position: 'absolute',
+              left: 0,
+              top: '25%',
+              width: '4px',
+              height: '100px',
+              background: '#C9B99A',
+              zIndex: 10,
+            }}
+            aria-hidden="true"
+          />
+
+          <img
+            src="/lovable-uploads/New Photos/business-women-talking-near-desk-coffee-break-hallway-big-corporation.jpg"
+            alt="Smart Staffing professionals collaborating in a modern workspace"
+            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+            fetchPriority="high"
+            loading="eager"
+          />
+
+          {/* Dark green overlay */}
+          <div
+            style={{ position: 'absolute', inset: 0, background: 'rgba(13, 43, 26, 0.25)' }}
+            aria-hidden="true"
+          />
+
+          {/* Brand badge */}
+          <div
+            style={{
+              position: 'absolute',
+              bottom: '1.5rem',
+              right: '1.5rem',
+              zIndex: 10,
+              background: '#1A3A2A',
+              padding: '0.75rem 1rem',
+            }}
+          >
+            <p
+              style={{
+                fontFamily: "'DM Sans', sans-serif",
+                fontSize: '0.65rem',
+                textTransform: 'uppercase',
+                letterSpacing: '0.14em',
+                color: '#C9B99A',
+                marginBottom: '0.2rem',
+              }}
+            >
+              Est. 2013
+            </p>
+            <p
+              style={{
+                fontFamily: "'Cormorant Garamond', Georgia, serif",
+                fontSize: '0.95rem',
+                fontWeight: 700,
+                color: '#FFFFFF',
+                lineHeight: 1.3,
+              }}
+            >
+              Nairobi &middot; East Africa
+            </p>
+          </div>
+        </div>
+
       </div>
     </section>
   );
