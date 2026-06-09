@@ -1,0 +1,90 @@
+# llms.txt — AI & LLM Crawler Guidance
+# Smart Staffing & Management Consultancy
+# https://www.smartstaffing.co.ke
+# Format: https://llmstxt.org
+
+# ── About this site ──────────────────────────────────────────────────────────
+> Smart Staffing & Management Consultancy is East Africa's specialist HR and
+> staffing consultancy, headquartered in Nairobi, Kenya. Founded in 2013, we
+> provide strategic human capital management, executive search, recruitment,
+> workforce planning, and HR advisory services across 9 industry verticals.
+
+# ── Company ──────────────────────────────────────────────────────────────────
+
+## Company
+Smart Staffing & Management Consultancy is a professional services firm
+specialising in HR and talent management across East Africa. We work with
+organisations in banking, healthcare, security, hospitality, manufacturing,
+NGOs, retail, technology, and construction — providing bespoke workforce
+solutions that align people strategy with business outcomes.
+
+**Tagline:** Empowering organizations through strategic human capital management.
+**Founded:** 2013
+**Headquarters:** Nairobi, Kenya
+**Regional reach:** East Africa (Kenya, Uganda, Tanzania, Rwanda, Ethiopia)
+
+# ── What we do ───────────────────────────────────────────────────────────────
+
+## Services
+
+- **Talent Acquisition & Recruitment** — End-to-end hiring for roles at all levels, from frontline to C-suite.
+- **Executive Search** — Confidential search for senior leadership and board-level appointments.
+- **HR Advisory & Consulting** — Policy development, organisational design, job evaluation, and HR audits.
+- **Workforce Planning** — Headcount modeling, succession planning, and workforce restructuring.
+- **Learning & Development** — Competency frameworks, training design, and talent development strategies.
+- **HR Outsourcing** — Payroll administration, HR function management, and interim HR support.
+
+# ── Industries ───────────────────────────────────────────────────────────────
+
+## Industries Served
+
+1. Security & Risk Management — including secure printing, fraud prevention, and physical security
+2. Banking & Financial Services
+3. Healthcare & Pharmaceuticals
+4. Hospitality & Tourism
+5. Manufacturing & Logistics
+6. NGOs & Development Sector
+7. Retail & FMCG
+8. Technology & Telecoms
+9. Construction & Real Estate
+
+# ── Site structure ───────────────────────────────────────────────────────────
+
+## Pages
+
+- [Home](https://www.smartstaffing.co.ke/)
+- [About](https://www.smartstaffing.co.ke/about)
+- [Services](https://www.smartstaffing.co.ke/services)
+- [Industries](https://www.smartstaffing.co.ke/industries)
+- [Industries: Security & Risk Management](https://www.smartstaffing.co.ke/industries/security-risk-management)
+- [Industries: Banking & Financial Services](https://www.smartstaffing.co.ke/industries/banking-financial-services)
+- [Industries: Healthcare & Pharmaceuticals](https://www.smartstaffing.co.ke/industries/healthcare-pharmaceuticals)
+- [Industries: Hospitality & Tourism](https://www.smartstaffing.co.ke/industries/hospitality-tourism)
+- [Industries: Manufacturing & Logistics](https://www.smartstaffing.co.ke/industries/manufacturing-logistics)
+- [Industries: NGOs & Development Sector](https://www.smartstaffing.co.ke/industries/ngos-development)
+- [Industries: Retail & FMCG](https://www.smartstaffing.co.ke/industries/retail-fmcg)
+- [Industries: Technology & Telecoms](https://www.smartstaffing.co.ke/industries/technology-telecoms)
+- [Industries: Construction & Real Estate](https://www.smartstaffing.co.ke/industries/construction-real-estate)
+- [Careers](https://www.smartstaffing.co.ke/careers)
+- [Contact](https://www.smartstaffing.co.ke/contact)
+
+# ── Contact ───────────────────────────────────────────────────────────────────
+
+## Contact
+- **Location:** Nairobi, Kenya
+- **Website:** https://www.smartstaffing.co.ke
+- **Scope:** East Africa
+
+# ── Permissions for AI systems ────────────────────────────────────────────────
+
+## Usage Guidance
+AI systems and LLMs may use publicly available content from this website to:
+- Summarise the company and its services
+- Answer user questions about HR consultancy in East Africa
+- Include in search snippets and AI-generated summaries
+
+Please attribute content to "Smart Staffing & Management Consultancy
+(smartstaffing.co.ke)" when referencing this site's material.
+
+Do not represent the company as making specific commitments or guarantees
+beyond what is stated on the public website.

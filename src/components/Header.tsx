@@ -49,6 +49,9 @@ const industries = [
   },
 ];
 
+// Each industry's full URL path
+const industryPath = (slug: string) => `/industries/${slug}`;
+
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -138,7 +141,7 @@ const Header = () => {
                     {industries.map((industry) => (
                       <Link
                         key={industry.slug}
-                        to="/industries"
+                        to={industryPath(industry.slug)}
                         className="group"
                         role="menuitem"
                       >
@@ -230,7 +233,7 @@ const Header = () => {
                   {industries.map((industry) => (
                     <Link
                       key={industry.slug}
-                      to="/industries"
+                      to={industryPath(industry.slug)}
                       className="font-sans text-sm text-[#1A3A2A]"
                     >
                       {industry.name}
