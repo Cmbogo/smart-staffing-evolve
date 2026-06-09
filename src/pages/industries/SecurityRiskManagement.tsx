@@ -5,9 +5,9 @@ import Footer from '@/components/Footer';
 
 const SecurityRiskManagement = () => {
   useEffect(() => {
-    document.title = 'Security & Risk Management HR Solutions | Smart Staffing Kenya';
+    document.title = 'Security Document Printing HR Solutions | Smart Staffing Kenya';
     const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute('content', 'Specialist HR, staffing, and workforce solutions for security, risk management, and security hardware sectors across East Africa. Serving guard forces, secure print, fraud prevention, and compliance teams.');
+    if (meta) meta.setAttribute('content', 'Specialist HR, staffing, and workforce solutions for secure printing, document authentication, fraud prevention, and anti-counterfeiting firms across East Africa.');
   }, []);
 
   const capabilities = [
@@ -69,7 +69,7 @@ const SecurityRiskManagement = () => {
         <section
           className="section-padding"
           style={{ background: '#1A3A2A' }}
-          aria-label="Security & Risk Management hero"
+          aria-label="Security Document Printing hero"
         >
           <div className="site-container">
             <div className="max-w-3xl">
@@ -87,10 +87,10 @@ const SecurityRiskManagement = () => {
                 className="font-display font-bold text-white mb-6"
                 style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', lineHeight: 1.08, letterSpacing: '-0.025em' }}
               >
-                Security &amp; Risk Management
+                Security Document Printing
               </h1>
               <p className="font-sans text-white/70 text-lg leading-relaxed max-w-2xl">
-                Workforce solutions for guard forces, security technology firms, secure print operations, and compliance-driven risk functions across East Africa.
+                Workforce solutions for secure print operations, document authentication firms, fraud prevention specialists, and compliance-driven security functions across East Africa.
               </p>
             </div>
           </div>

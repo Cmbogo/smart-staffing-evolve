@@ -21,7 +21,7 @@ const About = () => {
             </p>
             <p className="font-sans text-[#6B7063] leading-relaxed">
               Our founding team has spent over a decade inside HR functions, across banking,
-              security, hospitality, and professional services. We know what works in practice,
+              security document printing firms, hospitality, and professional services. We know what works in practice,
               and we build our work around that.
             </p>
           </div>

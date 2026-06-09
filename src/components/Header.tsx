@@ -3,8 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 
 const industries = [
   {
-    name: "Security & Risk Management",
-    descriptor: "Staffing for guard forces, risk officers, and compliance teams",
+    name: "Security Document Printing",
+    descriptor: "HR solutions for secure print, document authentication, and fraud prevention firms",
     slug: "security-risk-management",
   },
   {

@@ -50,7 +50,7 @@ const CareersPage = () => {
                   {[
                     {
                       title: "HR experience that counts",
-                      desc: "We want people who have worked inside organizations, not just studied them. Sector experience across banking, security, healthcare, or NGOs is an advantage."
+                      desc: "We want people who have worked inside organizations, not just studied them. Sector experience across banking, security document printing, healthcare, or NGOs is an advantage."
                     },
                     {
                       title: "Clarity of thinking",

@@ -12,7 +12,7 @@ const Footer = () => {
   ];
 
   const industryLinks = [
-    "Security & Risk Management",
+    "Security Document Printing",
     "Banking & Financial Services",
     "Healthcare & Pharmaceuticals",
     "Hospitality & Tourism",

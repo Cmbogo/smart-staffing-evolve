@@ -6,10 +6,10 @@ const industries = [
   {
     number: "01",
     slug: "security-risk-management",
-    name: "Security & Risk Management",
-    descriptor: "Staffing for guard forces, risk officers, and compliance teams",
-    challenge: "High turnover, inconsistent vetting, and unclear command structures create persistent risk. We build the HR systems and workforce plans that bring discipline to security operations.",
-    roles: "Security Officers, Risk Managers, Compliance Leads, Operations Supervisors",
+    name: "Security Document Printing",
+    descriptor: "HR solutions for secure print, document authentication, and fraud prevention firms",
+    challenge: "Organizations at the forefront of security print and fraud prevention need people they can trust absolutely. We build the HR systems and workforce plans that bring that standard of rigour to your operations.",
+    roles: "Secure Print Technicians, Document Security Specialists, Fraud Prevention Analysts, Compliance Leads",
   },
   {
     number: "02",

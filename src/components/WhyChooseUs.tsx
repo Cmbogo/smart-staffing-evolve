@@ -18,7 +18,7 @@ const WhyChooseUs = () => {
               HR that works in practice, not just on paper.
             </h2>
             <p className="font-sans text-white/70 text-lg leading-relaxed">
-              We have held senior HR roles across banking, security, hospitality, and consulting.
+              We have held senior HR roles across banking, security document printing firms, hospitality, and consulting.
               We know what organizations actually face, and we design solutions that fit those realities.
             </p>
           </div>
@@ -32,7 +32,7 @@ const WhyChooseUs = () => {
               },
               {
                 stat: "Cross-sector",
-                label: "Experience across banking, security, hospitality, and consulting",
+                label: "Experience across banking, security document printing firms, hospitality, and consulting",
               },
               {
                 stat: "Practical",
