@@ -1,6 +1,6 @@
 # llms.txt — AI & LLM Crawler Guidance
 # Smart Staffing & Management Consultancy
-# https://www.smartstaffing.co.ke
+# https://www.smartstaffingke.com
 # Format: https://llmstxt.org
 
 # ── About this site ──────────────────────────────────────────────────────────
@@ -52,27 +52,27 @@ solutions that align people strategy with business outcomes.
 
 ## Pages
 
-- [Home](https://www.smartstaffing.co.ke/)
-- [About](https://www.smartstaffing.co.ke/about)
-- [Services](https://www.smartstaffing.co.ke/services)
-- [Industries](https://www.smartstaffing.co.ke/industries)
-- [Industries: Security & Risk Management](https://www.smartstaffing.co.ke/industries/security-risk-management)
-- [Industries: Banking & Financial Services](https://www.smartstaffing.co.ke/industries/banking-financial-services)
-- [Industries: Healthcare & Pharmaceuticals](https://www.smartstaffing.co.ke/industries/healthcare-pharmaceuticals)
-- [Industries: Hospitality & Tourism](https://www.smartstaffing.co.ke/industries/hospitality-tourism)
-- [Industries: Manufacturing & Logistics](https://www.smartstaffing.co.ke/industries/manufacturing-logistics)
-- [Industries: NGOs & Development Sector](https://www.smartstaffing.co.ke/industries/ngos-development)
-- [Industries: Retail & FMCG](https://www.smartstaffing.co.ke/industries/retail-fmcg)
-- [Industries: Technology & Telecoms](https://www.smartstaffing.co.ke/industries/technology-telecoms)
-- [Industries: Construction & Real Estate](https://www.smartstaffing.co.ke/industries/construction-real-estate)
-- [Careers](https://www.smartstaffing.co.ke/careers)
-- [Contact](https://www.smartstaffing.co.ke/contact)
+- [Home](https://www.smartstaffingke.com/)
+- [About](https://www.smartstaffingke.com/about)
+- [Services](https://www.smartstaffingke.com/services)
+- [Industries](https://www.smartstaffingke.com/industries)
+- [Industries: Security & Risk Management](https://www.smartstaffingke.com/industries/security-risk-management)
+- [Industries: Banking & Financial Services](https://www.smartstaffingke.com/industries/banking-financial-services)
+- [Industries: Healthcare & Pharmaceuticals](https://www.smartstaffingke.com/industries/healthcare-pharmaceuticals)
+- [Industries: Hospitality & Tourism](https://www.smartstaffingke.com/industries/hospitality-tourism)
+- [Industries: Manufacturing & Logistics](https://www.smartstaffingke.com/industries/manufacturing-logistics)
+- [Industries: NGOs & Development Sector](https://www.smartstaffingke.com/industries/ngos-development)
+- [Industries: Retail & FMCG](https://www.smartstaffingke.com/industries/retail-fmcg)
+- [Industries: Technology & Telecoms](https://www.smartstaffingke.com/industries/technology-telecoms)
+- [Industries: Construction & Real Estate](https://www.smartstaffingke.com/industries/construction-real-estate)
+- [Careers](https://www.smartstaffingke.com/careers)
+- [Contact](https://www.smartstaffingke.com/contact)
 
 # ── Contact ───────────────────────────────────────────────────────────────────
 
 ## Contact
 - **Location:** Nairobi, Kenya
-- **Website:** https://www.smartstaffing.co.ke
+- **Website:** https://www.smartstaffingke.com
 - **Scope:** East Africa
 
 # ── Permissions for AI systems ────────────────────────────────────────────────
@@ -84,7 +84,7 @@ AI systems and LLMs may use publicly available content from this website to:
 - Include in search snippets and AI-generated summaries
 
 Please attribute content to "Smart Staffing & Management Consultancy
-(smartstaffing.co.ke)" when referencing this site's material.
+(smartstaffingke.com)" when referencing this site's material.
 
 Do not represent the company as making specific commitments or guarantees
 beyond what is stated on the public website.

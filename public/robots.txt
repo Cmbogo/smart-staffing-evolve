@@ -1,12 +1,12 @@
 # Smart Staffing & Management Consultancy — robots.txt
-# https://www.smartstaffing.co.ke
+# https://www.smartstaffingke.com
 
 # Allow all well-behaved crawlers
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.smartstaffing.co.ke/sitemap.xml
+Sitemap: https://www.smartstaffingke.com/sitemap.xml
 
 # Disallow non-content paths
 User-agent: *
