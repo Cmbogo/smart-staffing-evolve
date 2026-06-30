@@ -129,7 +129,7 @@ const Footer = () => {
         {/* Stone divider + copyright */}
         <div
           className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4"
-          style={{ borderTop: '1px solid #E5E0D8' }}
+          style={{ borderTop: '1px solid #032806' }}
         >
           <p className="font-sans text-xs text-[#6B7063] text-center md:text-left">
             &copy; {new Date().getFullYear()} Smart Staffing and Management Consultancy Ltd.
