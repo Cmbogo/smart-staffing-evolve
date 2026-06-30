@@ -92,8 +92,8 @@ const Services = () => {
           <p className="font-display text-[#0D0D0D]" style={{ fontSize: '1.5rem', fontWeight: 700 }}>
             Not sure which service fits your situation?
           </p>
-          <Link to="/contact" id="services-talk-link" className="btn-primary flex-shrink-0">
-            Talk to Us
+          <Link to="/contact" id="services-request-proposal" className="btn-primary flex-shrink-0">
+            Request a Proposal
           </Link>
         </div>
       </div>
