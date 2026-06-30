@@ -41,9 +41,9 @@ const Hero = () => {
               marginBottom: '0.65rem',
             }}
           >
-            Empowering organizations<br />
-            through strategic<br />
-            human capital management.
+            Turning People, Culture,<br />
+            and Strategy into<br />
+            Business Performance.
           </h1>
 
           {/* Sub-copy */}
@@ -53,30 +53,57 @@ const Hero = () => {
               fontSize: 'clamp(0.875rem, 1.2vw, 1rem)',
               color: '#6B7063',
               lineHeight: 1.6,
-              maxWidth: '400px',
+              maxWidth: '480px',
               marginBottom: '1.1rem',
             }}
           >
-            The right people, in the right roles, from day one.
+            We help organizations align leadership, people, and systems to improve
+            productivity, strengthen culture, and deliver sustainable results.
+          </p>
+
+          {/* Support line */}
+          <p
+            style={{
+              fontFamily: "'DM Sans', system-ui, sans-serif",
+              fontSize: '0.85rem',
+              fontStyle: 'italic',
+              color: '#6B7063',
+              lineHeight: 1.55,
+              maxWidth: '500px',
+              marginBottom: '1.1rem',
+              paddingLeft: '0.75rem',
+              borderLeft: '2px solid #C9B99A',
+            }}
+          >
+            Because when people, culture, and strategy are not aligned, performance
+            suffers—no matter how strong the business plan is.
           </p>
 
           {/* CTA row */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '1.1rem' }}>
             <Link
               to="/contact"
-              id="hero-talk-to-us"
+              id="hero-book-consultation"
               className="btn-primary"
               style={{ padding: '0.65rem 1.5rem', fontSize: '0.875rem' }}
             >
-              Talk to Us
+              Book a Consultation
             </Link>
             <Link
-              to="/services"
-              id="hero-see-services"
+              to="/contact"
+              id="hero-start-conversation"
               className="btn-secondary"
               style={{ padding: '0.65rem 1.5rem', fontSize: '0.875rem' }}
             >
-              See How It Works
+              Start a Conversation
+            </Link>
+            <Link
+              to="/contact"
+              id="hero-request-proposal"
+              className="btn-secondary"
+              style={{ padding: '0.65rem 1.5rem', fontSize: '0.875rem' }}
+            >
+              Request a Proposal
             </Link>
           </div>
 

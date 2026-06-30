@@ -10,14 +10,13 @@ const About = () => {
           <div>
             <span className="section-label">Who We Are</span>
             <h2 className="font-display text-[#0D0D0D] mb-6">
-              A consultancy built by practitioners.
+              About Smart Staffing &amp; Management Consultancy.
             </h2>
           </div>
           <div className="flex flex-col gap-5">
             <p className="font-sans text-[#0D0D0D] text-lg leading-relaxed">
-              Smart Staffing &amp; Management Consultancy is an HR and management consulting firm
-              based in Nairobi. We work with organizations across East Africa to address the people
-              and performance challenges that prevent strategy from becoming results.
+              We help organizations align people, culture, and strategy to drive business
+              performance through practical, results-driven solutions.
             </p>
             <p className="font-sans text-[#6B7063] leading-relaxed">
               Our founding team has spent over a decade inside HR functions, across banking,
@@ -27,28 +26,30 @@ const About = () => {
           </div>
         </div>
 
-        {/* Vision and Mission */}
-        <div className="grid md:grid-cols-2 gap-px bg-[#E5E0D8] mb-24">
+        {/* Vision, Mission, Social Responsibility */}
+        <div className="grid md:grid-cols-3 gap-px bg-[#E5E0D8] mb-24">
           <div className="bg-white p-10">
             <p className="section-label mb-4">Vision</p>
             <p className="font-display font-bold text-[#0D0D0D] mb-4"
               style={{ fontSize: '1.35rem', lineHeight: '1.3' }}>
-              To be the most trusted HR partner for organizations building for the long term.
-            </p>
-            <p className="font-sans text-sm text-[#6B7063] leading-relaxed">
-              We want to be the firm that CEOs and HR Directors in East Africa call when the
-              people challenges are real and the stakes are high.
+              To be a trusted partner in transforming organizations by aligning people,
+              culture, and strategy for sustainable performance.
             </p>
           </div>
           <div className="bg-white p-10">
             <p className="section-label mb-4">Mission</p>
             <p className="font-display font-bold text-[#0D0D0D] mb-4"
               style={{ fontSize: '1.35rem', lineHeight: '1.3' }}>
-              Solving critical people and performance problems with solutions that hold.
+              To support organizations in solving critical people and performance challenges
+              through practical, business-focused solutions that deliver measurable results.
             </p>
-            <p className="font-sans text-sm text-[#6B7063] leading-relaxed">
-              We work from the inside out: diagnosing root causes, designing practical
-              interventions, and supporting implementation until the outcomes are real.
+          </div>
+          <div className="bg-white p-10">
+            <p className="section-label mb-4">Social Responsibility</p>
+            <p className="font-display font-bold text-[#0D0D0D] mb-4"
+              style={{ fontSize: '1.35rem', lineHeight: '1.3' }}>
+              We are committed to promoting fair employment practices and supporting the
+              development of sustainable, high-performing workplaces.
             </p>
           </div>
         </div>
@@ -67,7 +68,7 @@ const About = () => {
                 desc: "We have worked inside organizations. We know which textbook answers do not survive contact with reality."
               },
               {
-                title: "Partnership and Collaboration",
+                title: "Partnership & Collaboration",
                 desc: "We work with your team, not around them. The solutions we build are ones your people can own."
               },
               {
@@ -75,12 +76,8 @@ const About = () => {
                 desc: "We stay engaged through implementation. We are accountable for outcomes, not just deliverables."
               },
               {
-                title: "Integrity and Professionalism",
+                title: "Integrity & Professionalism",
                 desc: "We tell clients what they need to hear, clearly and respectfully, even when it is uncomfortable."
-              },
-              {
-                title: "Social Responsibility",
-                desc: "We are committed to fair employment practices and the development of high-performing, equitable workplaces."
               },
             ].map((value) => (
               <div key={value.title} className="bg-[#F9F8F6] p-8">
