@@ -24,7 +24,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer style={{ background: '#FFFFFF', borderTop: '1px solid #E5E0D8' }} aria-label="Site footer">
+    <footer style={{ background: '#FFFFFF', borderTop: '1px solid #032806' }} aria-label="Site footer">
       <div className="site-container pt-16 pb-8">
 
         {/* 4-column grid */}
