@@ -24,7 +24,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer style={{ background: '#0D2B1A' }} aria-label="Site footer">
+    <footer style={{ background: '#FFFFFF', borderTop: '1px solid #E5E0D8' }} aria-label="Site footer">
       <div className="site-container pt-16 pb-8">
 
         {/* 4-column grid */}
@@ -43,7 +43,7 @@ const Footer = () => {
               />
             </Link>
             <p
-              className="font-display italic text-white/60 leading-relaxed"
+              className="font-display italic text-[#6B7063] leading-relaxed"
               style={{ fontSize: '1rem' }}
             >
               Empowering organizations through strategic human capital management.
@@ -52,7 +52,7 @@ const Footer = () => {
 
           {/* Col 2: Services */}
           <div>
-            <p className="font-sans text-xs font-medium uppercase tracking-widest text-[#C9B99A] mb-5">
+            <p className="font-sans text-xs font-medium uppercase tracking-widest text-[#1A3A2A] mb-5">
               Services
             </p>
             <ul className="flex flex-col gap-3">
@@ -60,7 +60,7 @@ const Footer = () => {
                 <li key={item}>
                   <Link
                     to="/services"
-                    className="font-sans text-sm text-white/60 hover:text-white transition-colors duration-150"
+                    className="font-sans text-sm text-[#6B7063] hover:text-[#0D0D0D] transition-colors duration-150"
                   >
                     {item}
                   </Link>
@@ -71,7 +71,7 @@ const Footer = () => {
 
           {/* Col 3: Industries */}
           <div>
-            <p className="font-sans text-xs font-medium uppercase tracking-widest text-[#C9B99A] mb-5">
+            <p className="font-sans text-xs font-medium uppercase tracking-widest text-[#1A3A2A] mb-5">
               Industries
             </p>
             <ul className="flex flex-col gap-3">
@@ -79,7 +79,7 @@ const Footer = () => {
                 <li key={item}>
                   <Link
                     to="/industries"
-                    className="font-sans text-sm text-white/60 hover:text-white transition-colors duration-150"
+                    className="font-sans text-sm text-[#6B7063] hover:text-[#0D0D0D] transition-colors duration-150"
                   >
                     {item}
                   </Link>
@@ -90,26 +90,26 @@ const Footer = () => {
 
           {/* Col 4: Contact */}
           <div>
-            <p className="font-sans text-xs font-medium uppercase tracking-widest text-[#C9B99A] mb-5">
+            <p className="font-sans text-xs font-medium uppercase tracking-widest text-[#1A3A2A] mb-5">
               Contact
             </p>
             <div className="flex flex-col gap-4">
-              <p className="font-sans text-sm text-white/60">0716 857 000</p>
+              <p className="font-sans text-sm text-[#6B7063]">0716 857 000</p>
               <div>
                 <a
                   href="mailto:Info@smartstaffingke.com"
-                  className="font-sans text-sm text-white/60 hover:text-white transition-colors block"
+                  className="font-sans text-sm text-[#6B7063] hover:text-[#0D0D0D] transition-colors block"
                 >
                   Info@smartstaffingke.com
                 </a>
                 <a
                   href="mailto:EMwangi@smartstaffingke.com"
-                  className="font-sans text-sm text-white/60 hover:text-white transition-colors block"
+                  className="font-sans text-sm text-[#6B7063] hover:text-[#0D0D0D] transition-colors block"
                 >
                   EMwangi@smartstaffingke.com
                 </a>
               </div>
-              <p className="font-sans text-sm text-white/60 leading-relaxed">
+              <p className="font-sans text-sm text-[#6B7063] leading-relaxed">
                 Riverside Close, Riverside Drive<br />
                 Nairobi, Kenya
               </p>
@@ -117,7 +117,7 @@ const Footer = () => {
                 href="https://www.smartstaffingke.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-sans text-sm text-white/60 hover:text-white transition-colors"
+                className="font-sans text-sm text-[#6B7063] hover:text-[#0D0D0D] transition-colors"
               >
                 www.smartstaffingke.com
               </a>
@@ -129,20 +129,20 @@ const Footer = () => {
         {/* Stone divider + copyright */}
         <div
           className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4"
-          style={{ borderTop: '1px solid #C9B99A' }}
+          style={{ borderTop: '1px solid #E5E0D8' }}
         >
-          <p className="font-sans text-xs text-white/40 text-center md:text-left">
+          <p className="font-sans text-xs text-[#6B7063] text-center md:text-left">
             &copy; {new Date().getFullYear()} Smart Staffing and Management Consultancy Ltd.
             All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            <Link to="/about" className="font-sans text-xs text-white/40 hover:text-white/70 transition-colors">
+            <Link to="/about" className="font-sans text-xs text-[#6B7063] hover:text-[#0D0D0D] transition-colors">
               About
             </Link>
-            <Link to="/contact" className="font-sans text-xs text-white/40 hover:text-white/70 transition-colors">
+            <Link to="/contact" className="font-sans text-xs text-[#6B7063] hover:text-[#0D0D0D] transition-colors">
               Contact
             </Link>
-            <Link to="/careers" className="font-sans text-xs text-white/40 hover:text-white/70 transition-colors">
+            <Link to="/careers" className="font-sans text-xs text-[#6B7063] hover:text-[#0D0D0D] transition-colors">
               Careers
             </Link>
           </div>

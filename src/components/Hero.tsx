@@ -6,15 +6,12 @@ const Hero = () => {
       id="home"
       className="relative bg-[#F9F8F6]"
       style={{
-        height: 'calc(100svh - 80px)',
-        minHeight: '580px',
-        maxHeight: '900px',
-        overflow: 'hidden',
+        minHeight: '560px',
       }}
       aria-label="Hero section"
     >
       {/* Full-height two-column grid */}
-      <div className="grid lg:grid-cols-2 h-full">
+      <div className="grid lg:grid-cols-2">
 
         {/* ── LEFT COLUMN ── */}
         <div
@@ -85,25 +82,9 @@ const Hero = () => {
               to="/contact"
               id="hero-book-consultation"
               className="btn-primary"
-              style={{ padding: '0.65rem 1.5rem', fontSize: '0.875rem' }}
+              style={{ padding: '0.75rem 1.75rem', fontSize: '0.9375rem' }}
             >
               Book a Consultation
-            </Link>
-            <Link
-              to="/contact"
-              id="hero-start-conversation"
-              className="btn-secondary"
-              style={{ padding: '0.65rem 1.5rem', fontSize: '0.875rem' }}
-            >
-              Start a Conversation
-            </Link>
-            <Link
-              to="/contact"
-              id="hero-request-proposal"
-              className="btn-secondary"
-              style={{ padding: '0.65rem 1.5rem', fontSize: '0.875rem' }}
-            >
-              Request a Proposal
             </Link>
           </div>
 
@@ -150,7 +131,7 @@ const Hero = () => {
         </div>
 
         {/* ── RIGHT COLUMN — image panel ── */}
-        <div className="relative hidden lg:block h-full">
+        <div className="relative hidden lg:block" style={{ minHeight: '560px' }}>
           {/* Stone accent bar */}
           <div
             style={{
